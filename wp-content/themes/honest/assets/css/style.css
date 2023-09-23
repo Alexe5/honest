@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+.posts {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.post {
+    padding: 15px;
+    border: 1px dashed #000;
+    border-radius: 15px;
+}
+
+.post + .post {
+    margin: 15px 0 0 0;
+}
+
+.post__title {
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .post__title {
+        font-size: 16px;
+    }
+}
+
+.post__text {
+    margin: 15px 0 0 0;
+}
+
+@media screen and (max-width: 767px) {
+    .post__text {
+        font-size: 10px;
+    }
+}
+
+.more {
+    display: block;
+    margin: 15px auto 0;
+    padding: 15px 30px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    border: 1px dashed #000;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.more:hover {
+    background: #fff;
+    color: #000;
+}
